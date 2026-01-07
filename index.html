@@ -94,37 +94,59 @@
       html {
         scroll-behavior: smooth;
       }
-      .service-category {
-        margin-bottom: 50px;
-      }
+      /* Center the Category Titles */
       .service-category h3 {
+        text-align: center;
         color: #198754;
         border-bottom: 2px solid #198754;
-        padding-bottom: 10px;
-        margin-bottom: 25px;
+        padding-bottom: 12px;
+        margin-bottom: 30px;
+        font-weight: 600;
       }
+
+      /* Center the content inside the Service Box */
       .service-list-item {
-        background: #f8f9fa;
-        border-left: 4px solid #198754;
-        padding: 15px;
-        margin-bottom: 15px;
-        border-radius: 5px;
+        background: #ffffff;
+        border: 1px solid #e9ecef;
+        border-top: 5px solid #198754; /* Changed from left to top for better symmetry when centered */
+        padding: 25px;
+        border-radius: 8px;
         transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertical center */
+        align-items: center; /* Horizontal center */
+        text-align: center; /* Text center */
       }
-      .service-list-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
+
+      /* Adjust the tag for center alignment */
       .service-provider-tag {
         display: inline-block;
         background: #198754;
         color: white;
-        padding: 3px 12px;
+        padding: 4px 14px;
         border-radius: 20px;
-        font-size: 0.85rem;
-        margin-top: 10px;
+        font-size: 0.8rem;
         font-weight: 500;
+        margin-top: 15px;
+        align-self: center; /* Ensures the tag itself centers */
       }
+
+      /* Layout Spacing */
+      .service-category {
+        margin-bottom: 60px;
+      }
+
+      .service-category h3 {
+        color: #198754;
+        border-bottom: 2px solid #198754;
+        padding-bottom: 12px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+
+      /* Other UI Components */
       .portfolio-item {
         margin-bottom: 30px;
       }
@@ -140,18 +162,24 @@
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
       }
+
       .back-to-top {
         position: fixed;
         right: 30px;
         bottom: 30px;
         z-index: 99;
       }
+
+      /* Responsive Adjustments */
       @media (max-width: 768px) {
         .display-1 {
           font-size: 3rem;
         }
         .display-5 {
           font-size: 2rem;
+        }
+        .service-list-item {
+          padding: 20px;
         }
       }
     </style>
@@ -419,6 +447,109 @@
         </div>
       </div>
     </div>
+    <div id="ornamental-plants" class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <p class="fs-5 fw-bold text-primary">Our Collection</p>
+          <h1 class="display-5 mb-5">Exotic Ornamental Plants</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img
+                  class="img-fluid"
+                  src="img/ornamental-1.jpg"
+                  alt="Flowering Shrubs"
+                />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <i class="fa fa-seedling fa-2x text-primary"></i>
+                </div>
+                <h4 class="mb-3">Flowering Shrubs</h4>
+                <p class="mb-4">
+                  Hibiscus, Bougainvillea, and Jasmine varieties perfect for the
+                  Tamil Nadu sun.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img
+                  class="img-fluid"
+                  src="img/ornamental-2.jpg"
+                  alt="Foliage Plants"
+                />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <i class="fa fa-leaf fa-2x text-primary"></i>
+                </div>
+                <h4 class="mb-3">Foliage Plants</h4>
+                <p class="mb-4">
+                  Decorative Crotons, Coleus, and Aglaonema for year-round color
+                  without flowers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img
+                  class="img-fluid"
+                  src="img/ornamental-3.jpg"
+                  alt="Indoor Air Purifiers"
+                />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <i class="fa fa-wind fa-2x text-primary"></i>
+                </div>
+                <h4 class="mb-3">Air Purifiers</h4>
+                <p class="mb-4">
+                  Snake plants, Spider plants, and Peace Lilies for healthy
+                  indoor spaces.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img
+                  class="img-fluid"
+                  src="img/ornamental-4.jpg"
+                  alt="Succulents & Cacti"
+                />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <i class="fa fa-sun fa-2x text-primary"></i>
+                </div>
+                <h4 class="mb-3">Low Maintenance</h4>
+                <p class="mb-4">
+                  Exotic succulents and desert cacti for modern, water-efficient
+                  landscapes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <a href="plants.html" class="btn btn-primary py-3 px-5 mt-3">
+        View All Ornamental Plants <i class="fa fa-arrow-right ms-2"></i>
+      </a>
+    </div>
 
     <div id="services" class="container-xxl py-5">
       <div class="container">
@@ -434,32 +565,32 @@
         <div class="service-category">
           <h3>Design & Planning</h3>
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="service-list-item">
                 <h5>Custom Landscape Design</h5>
                 <p>
                   Tailored designs matching your style preferences -
-                  Traditional, Modern, Tropical, or Zen gardens
+                  Traditional, Modern, Tropical, or Zen gardens.
                 </p>
                 <span class="service-provider-tag">Landscape Designers</span>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="service-list-item">
                 <h5>Lighting Design</h5>
                 <p>
                   Strategic outdoor lighting to highlight features and ensure
-                  safety
+                  safety throughout the night.
                 </p>
                 <span class="service-provider-tag">Lighting Specialists</span>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="service-list-item">
                 <h5>Rock & Fountain Features</h5>
                 <p>
                   Installation of decorative rock gardens, water fountains, and
-                  waterfall features
+                  premium waterfall features.
                 </p>
                 <span class="service-provider-tag">Feature Specialists</span>
               </div>
@@ -467,348 +598,37 @@
           </div>
         </div>
 
-        <div class="service-category">
+        <div class="service-category mt-5">
           <h3>Planting Services</h3>
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="service-list-item">
                 <h5>Ornamental Plants Selection</h5>
                 <p>
                   Wide variety of flowering plants, shrubs, and decorative
-                  foliage
+                  foliage for every season.
                 </p>
                 <span class="service-provider-tag">Plant Specialists</span>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="service-list-item">
                 <h5>Fruit Trees Supply</h5>
                 <p>
                   Quality fruit trees suitable for Tamil Nadu climate - Mango,
-                  Guava, Pomegranate, etc.
+                  Guava, Pomegranate, and more.
                 </p>
                 <span class="service-provider-tag">Nursery Suppliers</span>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="service-list-item">
                 <h5>Medicinal Herbs Garden</h5>
                 <p>
                   Create your own medicinal garden with Tulsi, Aloe Vera,
-                  Brahmi, etc.
+                  Brahmi, and traditional herbs.
                 </p>
                 <span class="service-provider-tag">Herbal Specialists</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Maintenance Services</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Lawn Care</h5>
-                <p>Regular mowing, edging, fertilizing, and weed control</p>
-                <span class="service-provider-tag">Maintenance Teams</span>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Plant Care</h5>
-                <p>
-                  Pruning, trimming, pest control, and nutritional management
-                </p>
-                <span class="service-provider-tag">Garden Experts</span>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Irrigation Management</h5>
-                <p>
-                  Drip irrigation setup, timer systems, and water management
-                </p>
-                <span class="service-provider-tag">Irrigation Experts</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Specialty Gardens</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Vertical Gardening</h5>
-                <p>Space-saving vertical gardens for walls and small spaces</p>
-                <span class="service-provider-tag"
-                  >Vertical Garden Specialists</span
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Organic Gardens</h5>
-                <p>Chemical-free vegetable and herb gardens</p>
-                <span class="service-provider-tag"
-                  >Organic Farming Experts</span
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Rock Gardens</h5>
-                <p>Low-maintenance rock gardens with succulents</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Water Features</h5>
-                <p>Ponds, waterfalls, and fountain installations</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="nursery-services" class="container-xxl py-5 bg-light">
-      <div class="container">
-        <div
-          class="text-center mx-auto wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 800px"
-        >
-          <p class="fs-5 fw-bold text-primary">Nursery Services</p>
-          <h1 class="display-5 mb-5">Nursery Development Services</h1>
-        </div>
-
-        <div class="service-category">
-          <h3>Infrastructure Development</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Polyhouse/Greenhouse Construction</h5>
-                <p>Complete setup of protected cultivation structures</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Mist Systems Installation</h5>
-                <p>Automated misting systems for propagation areas</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Bench Systems</h5>
-                <p>Efficient workbench setups for potting and maintenance</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Hardening Areas</h5>
-                <p>Designated areas for plant acclimatization</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Automation Systems</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>IoT Control Systems</h5>
-                <p>Smart monitoring of humidity, temperature, and light</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Automated Fertigation</h5>
-                <p>Precision nutrient and water delivery systems</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Climate Control</h5>
-                <p>Automated ventilation, heating, and cooling systems</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Consultancy Services</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Nursery Layout Design</h5>
-                <p>Optimal space planning for maximum efficiency</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Seedling Production</h5>
-                <p>
-                  Fruit, vegetable, and ornamental seedling production setup
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Government Subsidy Support</h5>
-                <p>NHB and other government scheme documentation assistance</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Branding & Marketing</h5>
-                <p>Nursery branding and product marketing strategies</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Management Services</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Disease Control Training</h5>
-                <p>Comprehensive training on pest and disease management</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Grading & Quality Control</h5>
-                <p>Standardized grading systems for plant quality</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Overall Nursery Management</h5>
-                <p>Complete operational management solutions</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="agricultural-services" class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 800px"
-        >
-          <p class="fs-5 fw-bold text-primary">Agricultural Support</p>
-          <h1 class="display-5 mb-5">Types of Agricultural Support Services</h1>
-        </div>
-
-        <div class="service-category">
-          <h3>Technical & Advisory Services</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Modern Farming Techniques</h5>
-                <p>Training on advanced cultivation methods and technologies</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Crop Protection</h5>
-                <p>Integrated pest management and disease control strategies</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Pest Control Advisory</h5>
-                <p>Expert guidance on sustainable pest control solutions</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Farm Inputs & Equipment</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Quality Seeds Supply</h5>
-                <p>Certified seeds for various crops</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Fertilizers & Pesticides</h5>
-                <p>Supply of organic and chemical inputs</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Farm Machinery</h5>
-                <p>Equipment rental and sales support</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Infrastructure & Market Support</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Farm Restructuring</h5>
-                <p>Land development and infrastructure planning</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Market Information Systems</h5>
-                <p>Real-time market prices and demand information</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Plant Quarantine</h5>
-                <p>Export/import certification and quarantine services</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Logistics Support</h5>
-                <p>Transportation and storage solutions</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-category">
-          <h3>Specialized Services</h3>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Custom Harvesting</h5>
-                <p>Mechanical harvesting services for large farms</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Aerial Application</h5>
-                <p>Drone-based fertilizer and pesticide spraying</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Animal Husbandry Support</h5>
-                <p>Integration of livestock with farming systems</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-list-item">
-                <h5>Forestry & Fishing Support</h5>
-                <p>Multi-sector agricultural support services</p>
               </div>
             </div>
           </div>
